@@ -20,7 +20,6 @@ class Artist
   end
 
   def song_count
-    length(@songs)
   end
 
 end
