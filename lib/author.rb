@@ -8,7 +8,7 @@ class Author
   end
 
   def posts
-    Post.all.select {|post| post.author == self} #select all from array
+    Post.all.select {|post| post.author == self}
   end
 
   def add_post(post)
@@ -16,6 +16,6 @@ class Author
     post.author = self
   end
 
-  
+
 
 end
