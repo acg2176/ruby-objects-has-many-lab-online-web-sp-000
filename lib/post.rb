@@ -12,10 +12,22 @@ class Post
     @title
   end
 
+  def author
+    @author
+  end
+
   def all
+    @@all
+  end
 
   def self.all
     @@all
+  end
+
+  def author_name
+    if @author
+      self.author.name
+    end
   end
 
 end
